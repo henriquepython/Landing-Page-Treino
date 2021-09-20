@@ -16,13 +16,16 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body class="main-bg">
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close-menu"></label>
     <aside class="menu white-bg">
         <section class="main-content menu-content">
 
             <div><a href="#home">LOGO</a></div>
             
             <nav>
-                <ul>
+                <!-- para fazer menu responsivo fechar automaticamente ao clicar na seção onclick="getElementById('close-menu').checked = false; -->
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#intro">Intro</a></li>
                     <li><a href="#grid-one">Grid-one</a></li>
                     <li><a href="#gallery">Gallery</a></li>
@@ -254,5 +257,7 @@
     <footer id="footer" class="main-bg">
         <p><a rel="nofollow" target="_blank" href="https://www.linkedin.com/in/jo%C3%A3o-henrique-batista-pereira/">Feito com amor por João Henrique no curso JS 2021</a></p>
     </footer>
+
+    <a class="back-to-top" href="#">↑</a>
 </body>
 </html>
