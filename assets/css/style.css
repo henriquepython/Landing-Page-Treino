@@ -179,6 +179,11 @@
     border: .1rem solid var(--primary-color);
 }
 
+.back-to-top:hover {
+    background-color: black;
+    color: white;
+}
+
 @media (max-width: 800px) {
     .intro-content, .grid {
         grid-template-columns: 1fr;
